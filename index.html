@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Grupo 5</title>
+</head>
+
+<body>
+    <header>
+        <div class="logoCelu"><i class="bi bi-phone"></i></div>
+        <h1>G5 Store</h1>
+        <div class="Carrito"><i class="bi bi-cart2" id="carritoVacio"></i></div>
+        <button class="btn-bag-fill" id="btnBagFill"><i class="bi bi-cart-plus" id="carritoLleno"></i></button>
+
+    </header>
+    <main>
+        <section class="presentation">
+            <div class="logo">
+                <img src="data:image/jpeg;base64,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"
+                    alt="Logo aregntina programa">
+            </div>
+            <div class="presentationG5">
+
+                <h2 class="Q">¿Quienes somos?</h2>
+                <p>
+                    Somos una tienda online ficticia,dedicada a la venta de telefonos celulares.<br>
+                    G5 Store nace con el fin de aprobar el examen final de <strong><a
+                            href="https://www.argentina.gob.ar/economia/conocimiento/argentina-programa"
+                            class="a-presentacion">argentina-programa 4.0</a></strong>,
+                    <br> curso de <strong>Desarrollo web inicial</strong>. El equipo de trabajo esta
+                    integrado por : <br>
+                <ul>
+                    <li>Zorzoli Facundo</li>
+                    <li>Torres Fernando</li>
+                    <li>De la Rosa Laura</li>
+                    <li>Candelaria Francisco</li>
+                    <li>Pedernera Augusto</li>
+                    <li>Aliende Jonatan</li>
+                </ul>
+                </p>
+            </div>
+
+        </section>
+        <section id="contenedor" class="productos"></section>
+    </main>
+    <footer>
+        <div class="grupo5">
+            <h2 class="foot">Quienes somos:</h2>
+            <p class="fot">
+                Somos estudiantes de <strong>Desarrollo web inicial</strong>
+                brindado por la UTN Mar del plata e impulsado por
+                <a href="https://www.argentina.gob.ar/economia/conocimiento/argentina-programa">Argentina programa 4.0
+                </a>; Se trata de un programa nacional y federal que tiene como objetivo
+                capacitar a personas en lenguajes y conocimientos sobre programación,
+                testing y habilidades digitales para potenciar la empleabilidad en el
+                sector del software y la tecnología.
+            </p>
+        </div>
+        <div class="contac">
+            <h2>Contáctanos</h2>
+            <form class="form">
+                <div class="inputContainer">
+                    <label for="nombre">Ingrese nombre completo</label>
+                    <input type="text" name="nombreCompleto" placeholder="cosme fulanito" id="nombre" required />
+                </div>
+                <div class="inputContainer">
+                    <label for="email">Ingrese su correo electronico</label>
+                    <input type="email" name="correoElectronico" placeholder="cosmefulanito@gmail.com" id="email" required/>
+                </div>
+                <div class="inputContainer">
+                    <label for="textarea">Mensaje</label>
+                    <textarea id="textarea" rows="8" name="textarea" cols="20" placeholder="escriba su mensaje..."
+                        class="textarea">
+                </textarea>
+                </div>
+
+
+                <div class="envio">
+                    <input type="submit" value="enviar" class="enviar-btn" />
+                    <span class="gracias">Gracias por tu mensaje!</span>
+                </div>
+            </form>
+            <div id="contenedorMensajes"></div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
